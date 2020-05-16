@@ -16,7 +16,7 @@
 * 補充網頁：
     * [Picsum](https://picsum.photos/)
     * [Unsplash](https://source.unsplash.com/)
-    * [VisualHung](https://visualhunt.com/)
+    * [VisualHun](https://visualhunt.com/)
 * 快捷鍵
     * 向下複製 alt + shift + ↓ 
     * 向上複製 alt + shift + ↑
