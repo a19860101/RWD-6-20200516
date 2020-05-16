@@ -6,13 +6,30 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
-        <label for="name">姓名</label>
-        <input type="text" id="name" name="name">
+    <form action="reply.html">
+        <!-- <label for="name">姓名</label> -->
+        <!-- placeholder 佔位文字 -->
+        <input type="text" id="name" name="name" required placeholder="請輸入姓名">
+        <br>
+        <br>
+        <label for="birth">生日</label>
+        <input type="date" id="birth" name="birth">
+        <br>
+        <br>
+        <label for="mail">Mail</label>
+        <input type="email" id="mail" name="mail">
+        <br>
+        <br>
+        <label for="upload">上傳圖片</label>
+        <input type="file">
+        <br>
+        <br>
+        <label for="num">數量</label>
+        <input type="number" id="num" name="num" max="9" min="0">
         <br>
         <br>
         <label for="pw">密碼</label>
-        <input type="password" id="pw" name="pw">
+        <input type="password" id="pw" name="pw" placeholder="請輸入8-12為密碼">
         <br>
         <br>
         <label for="male">男性</label>
@@ -30,6 +47,26 @@
             <option value="大專院校">大專院校</option>
             <option value="研究所以上">研究所以上</option>
         </select>
+        <br>
+        <br>
+        <label for="graphic">平面設計</label>
+        <input type="checkbox" name="graphic" id="graphic">
+        <label for="web">網頁設計</label>
+        <input type="checkbox" name="web" id="web">
+        <label for="primiere">影視剪輯</label>
+        <input type="checkbox" name="primiere" id="primiere">
+
+        <br>
+        <br>
+        <label for="comment">評論</label>
+        <textarea name="comment" id="comment" cols="100" rows="20"></textarea>
+
+        <br>
+        <br>
+        <input type="submit" value="送出">
+        <input type="reset">
+        <input type="button" value="取消">
+        <button>自訂按鈕</button>
     </form>
 </body>
 </html>
