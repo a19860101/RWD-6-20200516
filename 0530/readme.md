@@ -164,9 +164,218 @@ font-family: "字體名稱" ;
 #### font-variant
 小型大寫字母
 >快速鍵:fv
+
+***
+***
 ### CSS背景相關樣式 
+#### background-color背景色
+
+> 快速鍵: bgc
+> 
+```css
+background-color: 色碼 ;
+```
+#### background-image 背景圖片或漸層
+
+> 快速鍵: bgi
+> 
+* url() - 圖片
+```css
+background-image: url("圖片位置") ;
+```
+* linear-gradient() - 線性漸層
+```css
+background-image: linear-gradient(to right, red 30%,blue 40%, yellow 50%, green 60% );
+```
+* repeating-linear-gradient() - 線性重複漸層
+```css
+background-image: repeating-linear-gradient(45deg,transparent 0px,transparent 10px,blue 10px,blue 20px); 
+```
+* radial-gradient() - 放射性漸層
+```css
+background-image: radial-gradient(red 30%,blue 30%,blue 40%,yellow 40%, yellow 50%,green 50% );
+```
+* repeating-radial-gradient() - 放射性重複漸層
+```css
+
+```
+***
+#### background-repeat背景的重複方式
+
+> 快速鍵: bgr
+> 
+* repeat - 完全重複
+* repeat-x - x軸重複
+* repeat-y - y軸重複
+* no-repeat - 不重複
+
+```css
+background-repeat: repeat ;
+```
+***
+#### background-position背景的位置
+
+> 快速鍵: bgp
+> 
+```css
+background-position: 100px 50px ;
+/*背景水平偏移100px，垂直偏移50px*/
+```
+除了用數值表示，也可以使用方位
+* top
+* bottom
+* center
+* left
+* right
+```css
+background-position: right top;
+/*背景靠右上*/
+```
+***
+#### background-attachment背景固定方式
+
+> 快速鍵: bga
+> 
+* scroll - 捲動
+* fixed - 固定
+
+```css
+background-attachment: fixed ;
+```
+***
+#### background-size背景的大小
+
+>快速鍵: bgz
+> 
+* contain - 等比例符合內容
+* cover - 等比例填滿內容
+***
+***
+### 清單相關樣式
+#### list-style---清單樣式
+* none
+* disc
+* circle
+* square
+* decimal
+* upper-alpha
+* lower-alpha
+* upper-roman
+* lower-roman
+* cjk-ideographic
+* hiragana
+* katakana
+* lower-greek
+* armenian
+* georgian
+* hebrew
+***
+***
+### 排版相關
+#### width ---寬度
+元素寬度
+#### height--- 高度
+元素高度。
+> 若要讓高度可以滿版，有以下兩種做法
+```css
+/*作法一*/
+html,body {
+	height: 100%;
+}
+.box {
+	height: 100%;
+}
+/*作法二*/
+.box {
+	height: 100vh;
+}
+```
+***
+#### border--- 邊框
+```css
+border:color style width;/*順序可交換*/
+
+border-left:	color style width;
+border-right:	color style width;
+border-top:		color style width;
+border-bottom:	color style width;
+
+border-left-color: 		color;
+border-right-color: 	color;
+border-top-color: 		color;
+border-bottom-color: 	color;
+
+border-left-width: 		width;
+border-right-width: 	width;
+border-top-width:		width;
+border-bottom-width: 	width;
+
+border-left-style:		style;
+border-right-style:		style;
+border-top-style:		style;
+border-bottom-style:	style;
+```
+可使用的樣式-style
+* solid
+* double
+* dotted
+* dashed
+* inset
+* outset
+* groove
+* ridge
+
+***
+#### padding ---內距
+邊框到內容之間的距離
+* padding-left
+* padding-right
+* padding-top
+* padding-bottom
+* padding
+***
+#### margin--- 外距
+邊框以外到下一個元素之間的距離
+* margin-left
+* margin-right
+* margin-top
+* margin-bottom
+* margin
+***
+#### 縮寫(僅margin、padding有效):
+在margin與padding中可使用縮寫的方式設定不同位置的距離。
+
+```css
+margin:10px;                /*上下左右*/
+margin:10px 30px;           /*上下10px,左右30px*/
+margin:10px 30px 0px;       /*上10px,左右30px,下0px*/
+margin:10px 30px 0px 20px;  /*上10px,右30px,下0px,左20px*/
+```
+***
+#### block與inline的差異
+##### block
+1. block永遠都會往下換行，如果有設定寬度，右方空缺的部分會由margin自動填滿；如果沒有設定寬度，則寬度會視為100%
+2. 在block元素中，width、height、margin、padding、border都有作用
+##### inline
+1. 內容有多少，範圍就有多少
+2. width、height、margin-top、margin-bottom沒有作用
+3. padding-top、padding-bottom、border-top、border-bottom看的見效果，但不影響實際空間
+
+> 基本上只要是行內元素，就不建議使用width,height,border,margin,padding這些屬性，如果要使用就轉換成block或是inline-block之類的其他模式
+> 
+#### display --- 轉換元素
+* block
+* inline
+* inline-block
+* table
+* table-cell
+* table-row
+* flex
+* inline-flex
+* grid
 ### 補充網站
 * [Color Hunt](https://colorhunt.co/)
 * [Coolors](https://coolors.co/)
 * [Nippon Colors](https://nipponcolors.com/)
 * [Google Fonts](https://fonts.google.com/)
+* [CanIUse](https://caniuse.com/)
