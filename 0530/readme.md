@@ -116,10 +116,16 @@ rgb(30,0,200) => #1E00C8
 #### font-family --- 字體種類
 
 >快速鍵:ff
-> 
+
 ```css
-font-family: 字體名稱 ;
+font-family: "字體名稱" ;
 ```
+常用預設字體
+* Arial
+* tahoma
+* verdana
+* gill sans mt
+* segoe ui
 除了使用預設的字體以外，也可以使用 Google 網路字體(Web Font)。
 [Google Fonts](https://fonts.google.com/)
 ***
@@ -134,14 +140,32 @@ font-family: 字體名稱 ;
 >快速鍵:fs
 * italic
 * normal
+
+***
 #### letter-spacing --- 字元間距
+>快速鍵:ls
 字元之間的距離。
+***
 #### word-spacing --- 文字間距
+>快速鍵:wos
 英文單字之間的距離，中文無效
+***
 #### line-height --- 行高
+>快速鍵:lh
 行與行之間的距離，文字會在行高的正中間
+***
+#### text-transform
+文字變形。指的是文字大小寫。
+>快速鍵:tt 
+* uppercase
+* lowercase
+* capitalize
+***
+#### font-variant
+小型大寫字母
+>快速鍵:fv
 ### 補充網站
-* [Color Hung](https://colorhunt.co/)
+* [Color Hunt](https://colorhunt.co/)
 * [Coolors](https://coolors.co/)
 * [Nippon Colors](https://nipponcolors.com/)
 * [Google Fonts](https://fonts.google.com/)
