@@ -295,25 +295,25 @@ html,body {
 ```css
 border:color style width;/*順序可交換*/
 
-border-left:	color style width;
-border-right:	color style width;
-border-top:		color style width;
-border-bottom:	color style width;
+border-left:color style width;
+border-right:color style width;
+border-top:color style width;
+border-bottom:color style width;
 
-border-left-color: 		color;
-border-right-color: 	color;
-border-top-color: 		color;
-border-bottom-color: 	color;
+border-left-color: color;
+border-right-color: color;
+border-top-color: color;
+border-bottom-color: color;
 
-border-left-width: 		width;
-border-right-width: 	width;
-border-top-width:		width;
-border-bottom-width: 	width;
+border-left-width: width;
+border-right-width: width;
+border-top-width:width;
+border-bottom-width: width;
 
-border-left-style:		style;
-border-right-style:		style;
-border-top-style:		style;
-border-bottom-style:	style;
+border-left-style:style;
+border-right-style:style;
+border-top-style:style;
+border-bottom-style:style;
 ```
 可使用的樣式-style
 * solid
