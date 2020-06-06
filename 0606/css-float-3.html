@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 600px;
+            background-color: #ffd86b;
+            /* height: 300px; */
+            /* overflow: auto; */
+            /* auto,hidden皆可 */
+
+        }
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: #f54291;
+            float: left;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: #0e9aa7;
+            float: left;
+        }
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .cf {
+            display: flow-root;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container cf">
+        <div class="box"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
