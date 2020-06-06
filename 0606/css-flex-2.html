@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-family: "Segoe UI";
+            box-sizing: border-box;
+        }
+        .container {
+            width: 1200px;
+            height: 600px;
+            margin: auto;
+            background-color: #aaa;
+            
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-wrap: wrap; */
+            flex-flow: row wrap;
+
+            /* row,row-reverse,column,column-reverse */
+
+            justify-content: flex-start;
+            /* flex-start,flex-end,center,space-around ,space-between, space-evenly */
+            align-items: center;
+            /* flex-start,flex-end,center,stretch,baseline */
+        }
+        .box {
+            /* width: 300px; */
+            /* flex-basis:500px; */
+            flex: 0 0 calc(100% / 5);
+            /* flex: flex-grow flex-shrink flex-basis */
+        }
+
+        .box:nth-of-type(1){
+            background: #ea907a;
+            /* flex-grow: 3; */
+            /* flex-shrink: 4; */
+            
+
+        }
+        .box:nth-of-type(2){
+            background: #f4f7c5;
+            /* flex-grow: 1; */
+            /* flex-shrink: 1; */
+
+        }
+        .box:nth-of-type(3){
+            background: #abc2e8;
+            /* flex-grow: 2; */
+            /* flex-shrink: 1; */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam earum molestiae omnis molestias vel facere cupiditate, sequi sint odio quis itaque nam ea non, quod eum aliquid ab? Maiores, natus?
+        </div>
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure quam sit voluptatem totam commodi minima voluptate. Ex, dolorum cum voluptatem accusantium molestias ab totam saepe! Perspiciatis ex ducimus, velit a officia recusandae ad doloremque, earum totam error quam neque veritatis molestiae unde magni, expedita similique aperiam magnam? Ex, nisi!
+        </div>
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, iure. Eos fugit doloremque nemo quisquam aut pariatur, voluptas dolor iure esse ullam voluptates sint minus molestias.
+        </div>
+
+    </div>
+</body>
+</html>

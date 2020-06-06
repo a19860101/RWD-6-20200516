@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-family: "Segoe UI";
+            box-sizing: border-box;
+        }
+        img {
+            width: 100%;
+        }
+        .container {
+            width: 1200px;
+            margin: auto;
+            display: flex;
+        }
+        .box {
+            padding: 0 5px 5px;
+            width: calc(100% / 3);
+        }
+        .big {
+            padding: 0 5px 5px;
+            width: calc(100% / 3 * 2);
+        }
+        .small {
+            padding: 0 5px 5px;
+            width: calc(100% / 3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="https://picsum.photos/id/15/600" alt="">
+        </div>
+        <div class="box">
+            <img src="https://picsum.photos/id/115/600" alt="">
+        </div>
+        <div class="box">
+            <img src="https://picsum.photos/id/125/600" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="big">
+            <img src="https://picsum.photos/id/25/800/400" alt="">
+        </div>
+        <div class="small">
+            <img src="https://picsum.photos/id/35/400" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="small">
+            <img src="https://picsum.photos/id/36/400" alt="">
+        </div>
+        <div class="big">
+            <img src="https://picsum.photos/id/26/800/400" alt="">
+        </div>
+    </div>
+</body>
+</html>

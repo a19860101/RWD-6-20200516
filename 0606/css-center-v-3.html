@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* margin: 0; */
+            /* padding: 0; */
+            font-family: "Segoe UI";
+        }
+        .container {
+            width: 600px;
+            height: 400px;
+            background-color: #80bdab;
+
+            text-align: center;
+
+            /* font-size: 0; */
+        }
+        /* .container::before {
+            content:"";
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+
+        } */
+        /* .box {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px;
+        } */
+
+        .vam {
+            font-size: 0;
+        }
+        .vam::before {
+            content:"";
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+        }
+        /* 後代選取器 */
+        /* .vam *{
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px;
+        } */
+        /* 子代選取器 */
+        .vam > *{
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px;
+        }
+        /* .item > a {
+            color: #f00;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container vam">
+        <div class="box">
+            <h1>title</h1>
+        </div>
+    </div>
+    <!-- <ul>
+        <li class="item"><a href="#">ITEM</a>
+            <ul>
+                <li> <a href="#">qwerty</a></li>
+            </ul>
+        </li>
+    </ul> -->
+</body>
+</html>
