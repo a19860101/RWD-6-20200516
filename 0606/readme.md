@@ -28,3 +28,13 @@
 
 #### 區塊置中
 預設狀態下，區塊右邊剩餘的空間都是margin，預設為margin-right: auto，在這邊auto可以視為自動填滿margin；若將margin-left設定為auto時，則變成左邊填滿，區塊就會移到右邊；左右同時設定auto，區塊就會置中。
+
+#### calc  運算
+如果是有數值的屬性，皆可使用calc()做計算
+```css
+.container {
+    width: calc(100% / 3);
+    height: calc(100px + 50px);
+}
+```
+> 在運算子的前後要加上空格，否則會造成解析錯誤
