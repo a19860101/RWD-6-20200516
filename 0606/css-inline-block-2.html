@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         .container {
-            width: 1200px;
+            width: 900px;
             font-size: 0;
 
             /* margin-right: auto; */
@@ -14,33 +17,33 @@
             margin: auto;
         }
         .box {
-            width: 400px;
+            /* width: 33%; */
+            width: calc(100% / 3);
             display: inline-block;
             font-size: 16px;
             vertical-align: top;
             padding: 0 5px 5px;
 
-            box-sizing: border-box;
         }
         img {
             width: 100%;
         }
         .big {
-            width: 800px;
+            /* width: 66%; */
+            width: calc(100% / 3 *2);
             font-size: 16px;
             vertical-align: top;
             display: inline-block;
             padding: 0 5px 5px;
-            box-sizing: border-box;
 
         }
         .small {
-            width: 400px;
+            /* width: 33%; */
+            width: calc(100% / 3);
             font-size: 16px;
             vertical-align: top;
             display: inline-block;
             padding: 0 5px 5px;
-            box-sizing: border-box;
         }
     </style>
 </head>
