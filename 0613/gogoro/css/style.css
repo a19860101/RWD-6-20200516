@@ -112,9 +112,10 @@ header .btn:hover {
 #station .caption {
     padding-top: 100px;
     padding-left: 100px;
+    color: #333;
 }
 #station .six {
-    font-weight: 900;
+    font-weight: 700;
     font-size: 24px;
     margin-left: 6px;
     color: #333;
@@ -123,9 +124,27 @@ header .btn:hover {
     font-size: 80px;
     font-weight: 900;
     line-height: 1;
-    color: #333;
+   
 }
-.battery {
+#station .number {
+    font-size: 62px;
+    margin-top: 80px;
+    font-weight: 100;
+}
+#station .number sup {
+    font-size: 0.5em;
+    display: inline-block;
+    position: relative;
+    top: -6px;
+    left: -3px;
+    font-weight: bold;
+}
+#station .content {
+    font-weight: 600;
+    margin-left: 6px;
+    font-size: 14px;
+}
+#station .battery {
     position: relative;
     bottom: -15px;
 }
