@@ -102,10 +102,12 @@ header .btn:hover {
 }
 /* station */
 #station {
-    background-image: linear-gradient(to left bottom,#00ff2a,#00ffd5);
+    background-image: linear-gradient(to left bottom,#00ff2a,#36f790);
     border-style: solid;
     border-color: #ebebeb;
     border-width: 0px 3px 3px;
+    background-color: #36f790
+    ;
 }
 #station .caption {
     padding-top: 100px;
