@@ -100,6 +100,32 @@ header .btn:hover {
 #campaign p {
     color: #464646;
 }
-
+/* station */
+#station {
+    background-image: linear-gradient(to left bottom,#00ff2a,#00ffd5);
+    border-style: solid;
+    border-color: #ebebeb;
+    border-width: 0px 3px 3px;
+}
+#station .caption {
+    padding-top: 100px;
+    padding-left: 100px;
+}
+#station .six {
+    font-weight: 900;
+    font-size: 24px;
+    margin-left: 6px;
+    color: #333;
+}
+#station .three {
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1;
+    color: #333;
+}
+.battery {
+    position: relative;
+    bottom: -15px;
+}
 
 
