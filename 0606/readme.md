@@ -79,7 +79,7 @@ h1::after {
 }
 ```
 
-### 致中
+### 置中
 #### line-height置中
 #### table置中
 #### inline-block置中
