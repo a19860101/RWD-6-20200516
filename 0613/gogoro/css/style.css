@@ -1,3 +1,7 @@
+body{
+    background-color: #ebebeb;
+}
+
 nav {
     transition: 0.5s;
     position: fixed;
@@ -63,6 +67,38 @@ header .btn {
 header .btn:hover {
     background-color: #fff;
     color: #000;
+}
+/* campaign */
+#campaign .col-4 {
+    height: 400px;
+}
+#campaign .left {
+    background:url("../images/campaign-1.png") no-repeat center center;
+    background-size: cover;
+    border-style: solid;
+    border-color: #ebebeb;
+    border-width: 6px 3px;
+    text-align: center;
+}
+#campaign .center {
+    background:url("../images/campaign-2.png") no-repeat center center;
+    background-size: cover;
+    border-style: solid;
+    border-color: #ebebeb;
+    border-width: 6px 3px;
+    text-align: center;
+}
+
+#campaign .right {
+    background:url("../images/campaign-3.png") no-repeat center center;
+    background-size: cover;
+    border-style: solid;
+    border-color: #ebebeb;
+    border-width: 6px 3px;
+    text-align: center;
+}
+#campaign p {
+    color: #464646;
 }
 
 
