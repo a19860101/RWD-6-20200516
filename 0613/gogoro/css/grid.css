@@ -45,3 +45,11 @@
 .col-12 {
     flex: 0 0 calc(100% / 12 * 12);
 }
+[class^="col"]{
+    padding: 15px;
+}
+/* 
+    [class*="col] class內有包含col
+    [class^="col] class內開頭是col
+    [class$="col] class內結尾是col
+*/
