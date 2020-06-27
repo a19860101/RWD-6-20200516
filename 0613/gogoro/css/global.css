@@ -36,3 +36,8 @@ table {
 	display: block;
 	clear: both;
 }
+/* text-align */
+.t-left {text-align: left;}
+.t-center {text-align: center;}
+.t-right {text-align: right;}
+.t-justify {text-align: justify;}
