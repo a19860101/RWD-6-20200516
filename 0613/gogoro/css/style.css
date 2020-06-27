@@ -158,6 +158,17 @@ header .btn:hover {
     border-style: solid;
     border-color: #ebebeb;
     border-width: 0px 3px 6px;
+
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+   
+}
+#news .slogan {
+    font-size: 40px;
+    font-weight: 900;
+    position: relative;
+    top: 25%;
 }
 #news .eeyo {
     background: url("../images/eeyo.png")no-repeat center center;
@@ -165,6 +176,8 @@ header .btn:hover {
     border-style: solid;
     border-color: #ebebeb;
     border-width: 0px 3px 6px;
+    text-align: center;
+    font-size: 20px;
 }
 
 
