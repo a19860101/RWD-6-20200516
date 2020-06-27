@@ -186,6 +186,9 @@ header .btn:hover {
     padding-top: 50px;
     padding-bottom: 50px;
     background: #fff;
+    border-style: solid;
+    border-color: #ebebeb;
+    border-width: 0px 3px 6px;
 }
 #impact h2 {
     text-align: center;
@@ -212,4 +215,19 @@ header .btn:hover {
 #impact .content {
     font-size: 24px;
     font-weight: 100;
+}
+
+/* contact */
+#contact {
+    background: #323237;
+    color: #fff;
+    text-align: center;
+}
+#contact .btn {
+    background: #737d82;
+    display: inline-block;
+    padding: 8px 25px;
+    border-radius: 50px;
+    color: #fff;
+    margin-left: 50px;
 }
