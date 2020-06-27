@@ -231,19 +231,33 @@ header .btn:hover {
     align-items: flex-end;
 }
 #impact .km {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 100;
 }
 #impact .km sup {
-    font-size: 30px;
+    font-size: 20px;
 }
 #impact .secondary-title {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 18px;
 }
 #impact .content {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 100;
+}
+@media (min-width: 480px){
+    #impact .km {
+        font-size: 60px;
+    }
+    #impact .km sup {
+        font-size: 30px;
+    }
+    #impact .secondary-title {
+        font-size: 24px;
+    }
+    #impact .content {
+        font-size: 24px;
+    }
 }
 
 /* contact */
