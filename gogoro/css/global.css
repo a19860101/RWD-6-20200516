@@ -41,3 +41,21 @@ table {
 .t-center {text-align: center;}
 .t-right {text-align: right;}
 .t-justify {text-align: justify;}
+@media(min-width:480px){
+	.t-sm-left {text-align: left;}
+	.t-sm-center {text-align: center;}
+	.t-sm-right {text-align: right;}
+	.t-sm-justify {text-align: justify;}
+}
+@media(min-width:768px){
+	.t-md-left {text-align: left;}
+	.t-md-center {text-align: center;}
+	.t-md-right {text-align: right;}
+	.t-md-justify {text-align: justify;}
+}
+@media(min-width:1200px){
+	.t-lg-left {text-align: left;}
+	.t-lg-center {text-align: center;}
+	.t-lg-right {text-align: right;}
+	.t-lg-justify {text-align: justify;}
+}

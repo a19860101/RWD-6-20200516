@@ -116,13 +116,21 @@ header .btn:hover {
     border-style: solid;
     border-color: #ebebeb;
     border-width: 0px 3px 6px;
-    background-color: #36f790
-    ;
+    background-color: #36f790;
+    position: relative;
 }
 #station .caption {
-    padding-top: 100px;
-    padding-left: 100px;
+    padding-top: 30px;
+    padding-left: 30px;
     color: #333;
+}
+
+@media(min-width:1200px){
+    #station .caption {
+        padding-top: 100px;
+        padding-left: 100px;
+        color: #333;
+    }
 }
 #station .six {
     font-weight: 700;
@@ -131,10 +139,14 @@ header .btn:hover {
     color: #333;
 }
 #station .three {
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 900;
     line-height: 1;
-   
+}
+@media(min-width:768px){
+    #station .three {
+        font-size: 80px;
+    }
 }
 #station .number {
     font-size: 62px;
@@ -155,8 +167,16 @@ header .btn:hover {
     font-size: 14px;
 }
 #station .battery {
-    position: relative;
-    bottom: -15px;
+    position: absolute;
+    bottom:0;
+    width: 50%;
+}
+@media (min-width:1200px){
+    #station .battery {
+        position: relative;
+        bottom: -15px;
+        width: 100%;
+    }
 }
 /* news */
 #news {
