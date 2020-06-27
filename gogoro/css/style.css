@@ -37,7 +37,7 @@ header {
     justify-content: center;
     align-items: flex-end;
 }
-header .col-6 {
+header .content {
     padding: 100px 0;
     color: #fff;
 }
@@ -68,15 +68,13 @@ header .btn:hover {
     color: #000;
 }
 /* campaign */
-#campaign .col-4 {
-    height: 400px;
-}
 #campaign .left {
     background:url("../images/campaign-1.png") no-repeat center center;
     background-size: cover;
     border-style: solid;
     border-color: #ebebeb;
     border-width: 6px 3px;
+    height: 400px;
 }
 #campaign .center {
     background:url("../images/campaign-2.png") no-repeat center center;
@@ -84,6 +82,7 @@ header .btn:hover {
     border-style: solid;
     border-color: #ebebeb;
     border-width: 6px 3px;
+    height: 400px;
 }
 
 #campaign .right {
@@ -92,6 +91,7 @@ header .btn:hover {
     border-style: solid;
     border-color: #ebebeb;
     border-width: 6px 3px;
+    height: 400px;
 }
 #campaign p {
     color: #464646;
