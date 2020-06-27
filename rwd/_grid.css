@@ -1,0 +1,38 @@
+/* .fixed-width {
+    width: 100%;
+    margin: auto;
+    background-color: #ff7575;
+}
+@media (min-width: 600px){
+    .fixed-width {
+        width: 600px;
+        margin: auto;
+        background-color: #fdff69;
+    }
+}
+@media (min-width: 1200px){
+    .fixed-width {
+        width: 1200px;
+        margin: auto;
+        background-color: #4ef9ff;
+    }
+} */
+.fixed-width {
+    width: 1200px;
+    margin: auto;
+    background-color: #ff7575;
+}
+@media (max-width: 1200px){
+    .fixed-width {
+        width: 600px;
+        margin: auto;
+        background-color: #fdff69;
+    }
+}
+@media (max-width: 600px){
+    .fixed-width {
+        width: 100%;
+        margin: auto;
+        background-color: #4ef9ff;
+    }
+}
