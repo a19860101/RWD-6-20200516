@@ -179,9 +179,6 @@ header .btn:hover {
     }
 }
 /* news */
-#news {
-    height: 400px;
-}
 #news .blog {
     background: url("../images/blog.jpg")no-repeat center center;
     background-size: cover;
@@ -192,7 +189,7 @@ header .btn:hover {
     color: #fff;
     text-align: center;
     font-size: 28px;
-   
+    height: 400px;
 }
 #news .slogan {
     font-size: 40px;
@@ -208,6 +205,8 @@ header .btn:hover {
     border-width: 0px 3px 6px;
     text-align: center;
     font-size: 20px;
+
+    height: 400px;
 }
 
 /* impact */
