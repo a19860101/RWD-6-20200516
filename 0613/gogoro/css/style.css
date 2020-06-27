@@ -105,7 +105,7 @@ header .btn:hover {
     background-image: linear-gradient(to left bottom,#00ff2a,#36f790);
     border-style: solid;
     border-color: #ebebeb;
-    border-width: 0px 3px 3px;
+    border-width: 0px 3px 6px;
     background-color: #36f790
     ;
 }
@@ -147,6 +147,24 @@ header .btn:hover {
 #station .battery {
     position: relative;
     bottom: -15px;
+}
+/* news */
+#news {
+    height: 400px;
+}
+#news .blog {
+    background: url("../images/blog.jpg")no-repeat center center;
+    background-size: cover;
+    border-style: solid;
+    border-color: #ebebeb;
+    border-width: 0px 3px 6px;
+}
+#news .eeyo {
+    background: url("../images/eeyo.png")no-repeat center center;
+    background-size: cover;
+    border-style: solid;
+    border-color: #ebebeb;
+    border-width: 0px 3px 6px;
 }
 
 
