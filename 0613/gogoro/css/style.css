@@ -180,4 +180,36 @@ header .btn:hover {
     font-size: 20px;
 }
 
-
+/* impact */
+#impact {
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #fff;
+}
+#impact h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+#impact .earth {
+    text-align: center;
+}
+#impact .row {
+    align-items: flex-end;
+}
+#impact .km {
+    font-size: 60px;
+    font-weight: 100;
+}
+#impact .km sup {
+    font-size: 30px;
+}
+#impact .secondary-title {
+    font-weight: 600;
+    font-size: 24px;
+}
+#impact .content {
+    font-size: 24px;
+    font-weight: 100;
+}
