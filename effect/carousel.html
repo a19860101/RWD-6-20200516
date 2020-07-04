@@ -9,7 +9,19 @@
             width: 300px;
             height: 200px;
             position: relative;
-            perspective: 800px;
+            perspective: 1500px;
+
+            margin: 20% auto;
+        }
+        .carousel {
+            transform-style: preserve-3d;
+            transition: 15s;
+        }
+        .carousel:hover {
+            transform: rotateY(360deg);
+        }
+        .plane {
+            opacity: .5;
         }
         .carousel , .plane {
             width: 100%;
@@ -20,6 +32,22 @@
             background-image: linear-gradient(to left top,#ff1658,#5c04e9);
         }
         .plane:nth-of-type(1){
+            transform: translateZ(259.8px);
+        }
+        .plane:nth-of-type(2){
+            transform: rotateY(60deg)translateZ(259.8px);
+        }
+        .plane:nth-of-type(3){
+            transform: rotateY(120deg)translateZ(259.8px);
+        }
+        .plane:nth-of-type(4){
+            transform: rotateY(180deg)translateZ(259.8px);
+        }
+        .plane:nth-of-type(5){
+            transform: rotateY(240deg)translateZ(259.8px);
+        }
+        .plane:nth-of-type(6){
+            transform: rotateY(300deg)translateZ(259.8px);
         }
     </style>
 </head>
