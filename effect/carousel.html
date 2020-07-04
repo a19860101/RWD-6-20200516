@@ -16,12 +16,13 @@
         .carousel {
             transform-style: preserve-3d;
             transition: 15s;
+            animation: ro2 5s infinite; 
         }
-        .carousel:hover {
+        /* .carousel:hover {
             transform: rotateY(360deg);
-        }
+        } */
         .plane {
-            opacity: .5;
+            /* opacity: .5; */
         }
         .carousel , .plane {
             width: 100%;
@@ -49,17 +50,36 @@
         .plane:nth-of-type(6){
             transform: rotateY(300deg)translateZ(259.8px);
         }
+        @keyframes ro {
+            from{transform: rotateY(0deg)}
+            to{transform: rotateY(360deg)}
+        }
+        @keyframes ro2 {
+            0% {transform: rotateY(0deg)}
+            8.3% {transform: rotateY(0deg)}
+            16.6% {transform: rotateY(60deg)}
+            24.9% {transform: rotateY(60deg)}
+            33.2% {transform: rotateY(120deg)}
+            41.5% {transform: rotateY(120deg)}
+            49.8% {transform: rotateY(180deg)}
+            58.1% {transform: rotateY(180deg)}
+            66.4% {transform: rotateY(240deg)}
+            74.7% {transform: rotateY(240deg)}
+            83% {transform: rotateY(300deg)}
+            91.3% {transform: rotateY(300deg)}
+            100% {transform: rotateY(360deg)}
+        }
     </style>
 </head>
 <body>
     <div class="space">
         <div class="carousel">
-            <div class="plane"></div>
-            <div class="plane"></div>
-            <div class="plane"></div>
-            <div class="plane"></div>
-            <div class="plane"></div>
-            <div class="plane"></div>
+            <div class="plane"><img src="https://picsum.photos/id/18/300/200" alt=""></div>
+            <div class="plane"><img src="https://picsum.photos/id/28/300/200" alt=""></div>
+            <div class="plane"><img src="https://picsum.photos/id/38/300/200" alt=""></div>
+            <div class="plane"><img src="https://picsum.photos/id/48/300/200" alt=""></div>
+            <div class="plane"><img src="https://picsum.photos/id/58/300/200" alt=""></div>
+            <div class="plane"><img src="https://picsum.photos/id/68/300/200" alt=""></div>
         </div>
     </div>
 </body>
