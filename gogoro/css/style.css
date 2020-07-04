@@ -4,21 +4,23 @@ body{
 
 nav {
     transition: 0.5s;
-    position: fixed;
-}
-nav:hover {
+    position: relative;
     background-color: #000;
 }
+
 nav a {
     color: #fff;
-    padding: 0 15px;
+    padding: 10px 0;
     display: inline-block;
     font-size: 14px;
 }
 nav>.row {
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    
+}
+nav .row {
+    flex-direction: column;
 }
 .logo {
     font-size: 30px;
@@ -27,6 +29,28 @@ nav>.row {
 }
 .menu, .secondary-menu {
     align-items: center;
+    width: 100%;
+}
+@media(min-width: 1200px){
+    nav {
+         position: fixed;
+         background-color:transparent;
+    }
+    nav:hover {
+        background-color: #000;
+    }
+    nav .row {
+        flex-direction: row;
+    }
+    nav>.row {
+        height: 60px;
+    }
+    .menu, .secondary-menu {
+        width: auto;
+    }
+    nav a {
+        padding: 0 15px;
+    }
 }
 /* header */
 header {
