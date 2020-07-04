@@ -10,11 +10,30 @@
             height: 100px;
             background-color: #06ffc1;
             margin: auto;
-            transform:translate(100px,0)rotate(45deg);
+            /* transform:translate(100px,0)rotate(45deg); */
             /* 
                 scale(),rotate(),translate(),skew()
             */
+            transform: perspective(600px)skewX(10deg);
+             /* 
+                perspectve()
+                scaleX(),
+                scaleY(),
+                scaleZ(),
+                rotateX(),
+                rotateY(),
+                rotateZ(),
+                translateX(),
+                translateY(),
+                translateZ(),
+                skewX()
+                skewY()
+            */
+            transition: 1s;
         }
+        /* .box:hover {
+            transform: perspective(800px)rotateY(60deg); 
+        } */
         
     </style>
 </head>
