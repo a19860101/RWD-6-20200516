@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .space {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            perspective: 800px;
+        }
+        .carousel , .plane {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        .plane {
+            background-image: linear-gradient(to left top,#ff1658,#5c04e9);
+        }
+        .plane:nth-of-type(1){
+        }
+    </style>
+</head>
+<body>
+    <div class="space">
+        <div class="carousel">
+            <div class="plane"></div>
+            <div class="plane"></div>
+            <div class="plane"></div>
+            <div class="plane"></div>
+            <div class="plane"></div>
+            <div class="plane"></div>
+        </div>
+    </div>
+</body>
+</html>
