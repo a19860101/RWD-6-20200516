@@ -10,21 +10,24 @@
             height: 100px;
             background-color: #ff6161;
 
-            /* transition: 3s; */
+            transition: 3s;
 
-            transition: width .5s 0s,height .5s .5s,background-color .5s 1s;
+            /* transition: width .5s 0s,height .5s .5s,background-color .5s 1s; */
             /* transition: property duration delay timing-function */
-            
+
             /* transition-property: width,height,background-color; */
             /* transition-duration: .5s,.5s,.5s; */
             /* transition-delay: 0s,.5s,1s; */
-            transition-timing-function: ;
+            /* transition-timing-function: ease-in-out; */
+            /* ease,ease-in,ease-out,ease-in-out,linear */
+
+            transition: all 1s 0s ease-in-out;
         }
 
         .box:hover {
-            background-color: #0fdbff;
+            /* background-color: #0fdbff; */
             width: 200px;
-            height: 200px;
+            height: 600px;
         }
     </style>
 </head>
