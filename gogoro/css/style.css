@@ -6,6 +6,7 @@ nav {
     transition: 0.5s;
     position: relative;
     background-color: #000;
+    z-index: 999;
 }
 
 nav a {
@@ -337,4 +338,14 @@ footer .sns a {
 #copyright a {
     color: #737d82;
     margin: 0 10px;
+}
+header {
+    animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn{
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {transform: translateX(0)}
 }
