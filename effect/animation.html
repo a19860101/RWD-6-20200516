@@ -24,12 +24,19 @@
             /* animation-timing-function: ease-out; */
             /* ease, ease-in, ease-out, ease-in-out, linear*/
 
-            animation: a 1s 0s 1 forwards;
+            animation: b 5s 0s infinite alternate;
         }
 
         @keyframes a {
             from {transform: translateX(0)rotate(0);}
             to {transform: translateX(300px)rotate(180deg);}
+        }
+        @keyframes b {
+            0% {transform:translate(0,0)rotate(0)}
+            25% {transform:translate(500px,0)rotate(-90deg)}
+            50% {transform:translate(500px,500px)rotate(-180deg)}
+            75% {transform:translate(0,500px)rotate(-270deg)}
+            100% {transform:translate(0,0)rotate(-360deg)}
         }
     </style>
 </head>
