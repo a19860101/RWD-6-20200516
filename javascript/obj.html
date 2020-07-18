@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let user = new Object();
+        // user.name = 'john';
+        // user.mail = 'asdf@mail.com';
+
+        let user = {
+            name: 'John',
+            mail: 'asdf@gmail.com',
+            gender:'男'
+        }
+
+        // console.log(user.name);
+        // console.log(user.mail);
+        // console.log(user.gender);
+
+        // console.log(user['name']);
+        // console.log(user['mail']);
+        // console.log(user['gender']);
+
+        let users = [
+            {
+                name: 'John',
+                mail: 'asdf@gmail.com',
+                gender:'男'
+            },
+            {
+                name: 'Mary',
+                mail: 'zxcvzxcvz@gmail.com',
+                gender:'女'
+            },
+            {
+                name: 'Benny',
+                mail: 'werwerwer@gmail.com',
+                gender:'女'
+            }
+        ];
+
+        // console.log(users);
+        // console.log(users[0].name);
+        // console.log(users[0].mail);
+        // console.log(users[0].gender);
+        // console.log(users[1].name);
+        // console.log(users[1].mail);
+        // console.log(users[1].gender);
+        // console.log(users[2].name);
+        // console.log(users[2].mail);
+        // console.log(users[2].gender);
+
+        users.forEach(function(user){
+            console.log(user.name);
+            console.log(user.mail);
+            console.log(user.gender);
+        })
+
+    </script>
+</body>
+</html>

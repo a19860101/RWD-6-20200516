@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = new Array();
+        a[0] = '紅茶';
+        a[1] = '綠茶';
+        a[2] = '奶茶';
+
+        let b = new Array('紅茶','綠茶','奶茶');
+
+        let c = ['紅茶','綠茶','奶茶','珍珠奶茶','梅子綠茶','冰淇淋紅茶','楊枝甘露'];
+        let c2 = ['泡芙','戚風蛋糕'];
+        // console.log(c);
+        // console.log(c[0]);
+        // console.log(c[1]);
+        // console.log(c[2]);
+
+        // console.log(c.length);
+
+        //push,pop
+        // c.push('巧克力可可');
+        // c.pop();
+        //unshift,shift
+        // c.unshift('拿鐵');
+        // c.shift();
+
+        //splice 拼接
+        // c.splice(3,1,'拿鐵');
+        // c.splice(4,1);
+
+        //slice 切片
+        // let c_slice = c.slice(1,5);
+        // console.log(c_slice);
+
+        //concat 合併
+        // let d = c.concat(c2);
+        // let d = c2.concat(c);
+        // console.log(d);
+
+        //join 陣列轉字串
+        let c_join = c.join('__');
+        console.log(c_join);
+
+        //split 字串轉陣列
+        let str = 'hello_world_!!';
+        let str_split = str.split('_');
+        console.log(str_split);
+        //陣列迭代
+        // for(let i=0;i<c.length;i++){
+        //     console.log(c[i]);
+        // }
+        //新陣列方法 forEach
+        c.forEach(function(data,idx){
+            console.log(data);
+            // console.log(data,idx);
+            // console.log(`${idx + 1}:${data}`)
+        })
+        console.log(c);
+    </script>
+</body>
+</html>

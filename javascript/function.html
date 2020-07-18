@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function test(){
+            console.log('test');
+        }
+
+        function test2(x){
+            console.log(x);
+        }
+
+        function test3(x,y){
+            console.log(x * y);
+        }
+        // test3(10,0.8);
+
+        function cal(x){
+            x *= 0.8; 
+            return x;
+        }
+
+       
+        //函式宣告式(提升性)
+        // function show(a){
+        //     return a;
+        // }
+        
+        //函式表達式
+        // let show = function(a){
+        //     return a;
+        // }
+        // console.log(show(100));
+
+        //arrow function 箭頭函式
+
+        // let show = (a)=>{
+        //     return a;
+        // }
+        // let show = a =>{
+        //     return a;
+        // }
+        let show = a => a;
+
+        console.log(show(111))
+
+        let qq = (a,b) => { return a + b};
+
+        console.log(qq(100,50));
+
+    </script>
+</body>
+</html>

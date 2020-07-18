@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            display:none;
+        }
+
+    </style>
+</head>
+<body>
+    <button onclick="show()">SHOW</button>
+    <button id="btn">HIDE</button>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum quam, dolores maiores ipsam dolore voluptatibus, obcaecati rerum in debitis quia excepturi id quidem repellat quasi deserunt tempore praesentium fuga minima.
+    </p>
+    <script>
+        function show(){
+            let p = document.getElementsByTagName('p')[0];
+            // let p = document.querySelector('p');
+            p.style.display = 'block';
+        }
+
+        document.getElementById('btn').onclick = function(){
+            let p = document.getElementsByTagName('p')[0];
+            // let p = document.querySelector('p');
+            p.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
