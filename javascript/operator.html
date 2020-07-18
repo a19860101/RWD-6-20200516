@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = 100;
+        let y = 50;
+
+        //算術運算子
+        console.log(x + y);
+        console.log(x - y);
+        console.log(x * y);
+        console.log(x / y);
+        console.log(x % y);
+
+        let a = 50;
+        let b = 60;
+        //比較運算子
+        console.log(a > b);
+        console.log(a >= b);
+        console.log(a < b);
+        console.log(a <= b);
+        console.log(a == b);
+        console.log(a === b);
+        console.log(a != b);
+
+        //指定運算子(賦值運算子)
+        console.log(x = y);
+        console.log(x += y);
+        console.log(x -= y);
+        console.log(x *= y);
+        console.log(x /= y);
+        console.log(x %= y);
+
+        // 邏輯運算子
+        /* 
+            && AND
+            || OR
+            !  NOT
+        */
+        console.log(a>0 && b<0);
+        console.log(a>0 || b<0);
+
+        //三元運算子
+        // ? :
+
+        //字串運算子
+        // +
+
+        let s1 = 'hello';
+        let s2 = 'world';
+
+        // console.log(s1 + ' ' + s2);
+        // console.log(s1 + ' John');
+
+        //字串樣板
+        // console.log(`${s1} John`);
+        console.log(`${s1} ${s2}`);
+
+        let num = -100;
+        let z = num > 0 ? 'success':'error';
+        // if(num > 0){
+        //     let z = 'success';
+        // }else{
+        //     let z = 'error'
+        // }
+        console.log(z);
+    </script>
+</body>
+</html>
