@@ -22,7 +22,7 @@
             let search = document.getElementById('search').value;
             let li = document.querySelectorAll('li');
             li.forEach(function(data){
-                if(data.textContent.indexOf(search) > -1){
+                if(data.textContent.toUpperCase().indexOf(search.toUpperCase()) > -1){
                     data.style.display = '';
                 }else{
                     data.style.display = 'none';

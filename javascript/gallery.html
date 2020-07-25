@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 100%;
+        }
+        #gallery {
+            width: 600px;
+        }
+        #thumb {
+            width: 600px;
+            display: flex;
+        }
+        .thumbs {
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div id="gallery">
+        <img src="images/4664001_500.jpg">
+    </div>
+    <div id="thumb">
+        <img src="images/4664001_500.jpg" class="thumbs">
+        <img src="images/4664002_500.jpg" class="thumbs">
+        <img src="images/4664003_500.jpg" class="thumbs">
+        <img src="images/4664004_500.jpg" class="thumbs">
+        <img src="images/4664005_500.jpg" class="thumbs">
+    </div>
+    <script>
+        let thumbs = document.querySelectorAll('.thumbs');
+        thumbs.forEach(function(t){
+            t.onclick = function(e){
+                let newImg = e.target.getAttribute('src');
+                // let newImg = e.target.src;
+                console.log(newImg);
+                let gallery = document.getElementById('gallery').children;
+                gallery[0].setAttribute('src',newImg);
+            }
+        })
+    </script>
+</body>
+</html>
