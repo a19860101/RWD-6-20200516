@@ -20,9 +20,9 @@
             </div>
             <div class="col-12 mt-4">
                 <ul id="todos" class="list-group">
-                    <li class="list-group-item">list 1</li>
-                    <li class="list-group-item">list 2</li>
-                    <li class="list-group-item">list 3</li>
+                    <li class="list-group-item">list 1 <button class="btn btn-danger btn-sm float-right del">刪除</button></li>
+                    <li class="list-group-item">list 2 <button class="btn btn-danger btn-sm float-right del">刪除</button></li>
+                    <li class="list-group-item">list 3 <button class="btn btn-danger btn-sm float-right del">刪除</button></li>
                 </ul>
             </div>
         </div>
@@ -42,9 +42,21 @@
             document.getElementById('todos').append(li);
             li.classList.add('list-group-item');
 
+            let button = document.createElement('button');
+            button.classList.add('btn','btn-danger','btn-sm','float-right','del');
+            button.append('刪除')
+            li.append(button);
+
             document.getElementById('input').value = '';
 
         }   
+
+        document.onclick = function(e){
+            // console.log(e);
+            if(e.target.className == 'btn btn-danger btn-sm float-right del'){
+                console.log('delete')
+            }
+        }
     </script>
 </body>
 </html>
