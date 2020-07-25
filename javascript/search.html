@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="search" onkeyup="search()">
+    <ul>
+        <li>最完整跨平台網頁設計：HTML + CSS + JavaScript + jQuery + Bootstrap + Google Maps (全彩印刷)</li>
+        <li>TQC+ 網頁程式設計認證指南 HTML 5(第二版)</li>
+        <li>金魚都能懂的 CSS 選取器：金魚都能懂了你還怕學不會嗎（iT邦幫忙鐵人賽系列書）</li>
+        <li>設計師一定要學的 HTML5‧CSS3 網頁設計s手冊 - 零基礎也能看得懂、學得會</li>
+        <li>網頁設計手冊 (上)：網站開發基礎 16堂課</li>
+        <li>原來跨平台開發可以這麼簡單：React Native 全攻略 (附範例光碟)</li>
+        <li>讓 TypeScript 成為你全端開發的 ACE！（iT邦幫忙鐵人賽系列書）</li>
+        <li>Effective TypeScript 中文版｜提昇 TypeScript 技術的 62個具體作法 (Effective TypeScript)</li>
+    </ul>
+    <script>
+        function search(){
+            let search = document.getElementById('search').value;
+            let li = document.querySelectorAll('li');
+            li.forEach(function(data){
+                if(data.textContent.indexOf(search) > -1){
+                    data.style.display = '';
+                }else{
+                    data.style.display = 'none';
+                }
+            })
+        }
+
+    </script>
+</body>
+</html>
