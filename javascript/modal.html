@@ -69,12 +69,20 @@
                 document.getElementById(target).classList.add('active');
             }
         })
-        let modal_close = document.querySelectorAll('.modal-close');
-        modal_close.forEach(function(modalClose){
-            modalClose.onclick = function(e){
-                e.target.parentElement.parentElement.parentElement.classList.remove('active');
+        // let modal_close = document.querySelectorAll('.modal-close');
+        // modal_close.forEach(function(modalClose){
+        //     modalClose.onclick = function(e){
+        //         e.target.parentElement.parentElement.parentElement.classList.remove('active');
+        //     }
+        // })
+        document.onclick = function(e){
+            if(e.target.className == 'modal-close' || e.target.className =='modal-overlay'){
+                let modal = document.querySelectorAll('.modal');
+                modal.forEach(function(m){
+                    m.classList.remove('active');
+                })
             }
-        })
+        }
     </script>
 </body>
 </html>
