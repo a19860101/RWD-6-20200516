@@ -55,5 +55,14 @@
             </div>
         </div>
     </div>
+    <script>
+        let modal_btn = document.querySelectorAll('.modal-btn');
+        modal_btn.forEach(function(modalBtn){
+            modalBtn.onclick = function(e){
+                let target = e.target.dataset.target;
+                document.getElementById(target).classList.add('active');
+            }
+        })
+    </script>
 </body>
 </html>
