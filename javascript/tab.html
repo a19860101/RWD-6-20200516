@@ -5,12 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         .tabs {
             width: 600px;
             margin: auto;
         }
+        .tab-nav {
+            background-color: #ddd;
+        }
+        .tab-link {
+            display: inline-block;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+        .tab-link.active {
+            background-color: #bbb;
+        }
         .tab-panel {
             display: none;
+            background-color: #bbb;
+            padding: 15px;
         }
         .tab-panel.active{
             display: block;
@@ -48,10 +67,13 @@
         t_link.forEach(function(tlink){
             tlink.onclick = function(e){
                 let href = e.target.getAttribute('href');
+                t_link.forEach(function(t){
+                    t.classList.remove('active');
+                })
+                e.target.classList.add('active');
             
                 let panel = document.querySelectorAll('.tab-panel');
                 panel.forEach(function(pn){
-                    console.log(pn.id);
                     if(href == '#'+pn.id){
                         pn.classList.add('active');
                     }else{
