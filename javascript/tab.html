@@ -20,9 +20,9 @@
 <body>
     <div class="tabs">
         <div class="tab-nav">
-            <a href="">tab-1</a>
-            <a href="">tab-2</a>
-            <a href="">tab-3</a>
+            <a href="#tab-1" class="tab-link active">tab-1</a>
+            <a href="#tab-2" class="tab-link">tab-2</a>
+            <a href="#tab-3" class="tab-link">tab-3</a>
         </div>
         <div id="tab-1" class="tab-panel active">
             <h2>title 1</h2>
@@ -43,5 +43,23 @@
             </p>
         </div>
     </div>
+    <script>
+        let t_link = document.querySelectorAll('.tab-link');
+        t_link.forEach(function(tlink){
+            tlink.onclick = function(e){
+                let href = e.target.getAttribute('href');
+            
+                let panel = document.querySelectorAll('.tab-panel');
+                panel.forEach(function(pn){
+                    console.log(pn.id);
+                    if(href == '#'+pn.id){
+                        pn.classList.add('active');
+                    }else{
+                        pn.classList.remove('active');
+                    }
+                })
+            }
+        })
+    </script>
 </body>
 </html>
