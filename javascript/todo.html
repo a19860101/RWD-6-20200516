@@ -53,8 +53,10 @@
 
         document.onclick = function(e){
             // console.log(e);
-            if(e.target.className == 'btn btn-danger btn-sm float-right del'){
-                console.log('delete')
+            if(e.target.className.indexOf('del') > -1){
+                // console.log('delete')
+                console.log(e.target);
+                e.target.parentElement.remove();
             }
         }
     </script>
