@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        img {
+            width: 100%;
+        }
+        #gallery {
+            width: 600px;
+        }
+        #thumb {
+            width: 600px;
+            display: flex;
+        }
+        .thumbs {
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div id="gallery">
+        <img src="images/4664001_500.jpg">
+    </div>
+    <div id="thumb">
+        <img src="images/4664001_500.jpg" class="thumbs">
+        <img src="images/4664002_500.jpg" class="thumbs">
+        <img src="images/4664003_500.jpg" class="thumbs">
+        <img src="images/4664004_500.jpg" class="thumbs">
+        <img src="images/4664005_500.jpg" class="thumbs">
+    </div>
+    <script>
+        $(function(){
+            $('.thumbs').click(function(){
+                let newImg = $(this).attr('src');
+                $('#gallery').find('img').attr('src',newImg);
+            })
+        })
+    </script>
+</body>
+</html>

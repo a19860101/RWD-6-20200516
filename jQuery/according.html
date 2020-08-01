@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "gill sans mt";
+        }
+        .container {
+            width: 600px;
+            margin: auto;
+        }
+        h2 {
+            background-color: #ddd;
+            padding: 10px;
+            border-bottom: 1px solid #999;
+            cursor: pointer;
+            transition: .3s;
+        }
+        h2.active{
+            background-color: #f9d56e;
+        }
+        h2:hover {
+            background-color: #f9d56e;
+            transition: .3s;
+        }
+        p {
+            background-color: #ccc;
+            padding: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Title 1</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At possimus fugiat ipsam repellat nemo totam quibusdam, harum autem aspernatur dolore dicta voluptate, amet nihil dolores ad. Blanditiis omnis reiciendis quis.
+        </p>
+        <h2>Title 2</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum facilis recusandae et, praesentium aliquid delectus dolorem ab quod soluta mollitia, inventore vitae accusamus? Veniam molestias, eius ipsa, qui hic blanditiis repellendus eveniet nostrum praesentium distinctio laboriosam sint iure repellat obcaecati vero id quibusdam, iusto est recusandae doloremque quaerat.
+        </p>
+        <h2>Title 3</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam nesciunt laborum minima, vero fugiat reiciendis, fugit unde quod delectus est! Nostrum, fuga vitae?
+        </p>
+        <h2>Title 4</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At possimus fugiat ipsam repellat nemo totam quibusdam, harum autem aspernatur dolore dicta voluptate, amet nihil dolores ad. Blanditiis omnis reiciendis quis.
+        </p>
+    </div>
+    <script>
+        $(function(){
+            $('h2').click(function(){
+                // $(this).next().toggle(600);
+                // $(this).next().fadeToggle();
+                $(this).next().slideToggle(200);
+                $(this).toggleClass('active');
+            });
+        })
+    </script>
+</body>
+</html>

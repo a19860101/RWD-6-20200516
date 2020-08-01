@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .tabs {
+            width: 600px;
+            margin: auto;
+        }
+        .tab-nav {
+            background-color: #ddd;
+        }
+        .tab-link {
+            display: inline-block;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+        .tab-link.active {
+            background-color: #bbb;
+        }
+        .tab-panel {
+            display: none;
+            background-color: #bbb;
+            padding: 15px;
+        }
+        .tab-panel.active{
+            display: block;
+        }
+        @keyframes fadeIn{
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        @keyframes fadeLeftIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="tabs">
+        <div class="tab-nav">
+            <a href="#" data-target="tab-1" class="tab-link active">tab-1</a>
+            <a href="#" data-target="tab-2" class="tab-link">tab-2</a>
+            <a href="#" data-target="tab-3" class="tab-link">tab-3</a>
+        </div>
+        <div id="tab-1" class="tab-panel active">
+            <h2>title 1</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio debitis voluptatem et sunt doloribus, illum maiores id explicabo aliquam pariatur possimus maxime quae facilis saepe quis a nulla. Quam, quod.
+            </p>
+        </div>
+        <div id="tab-2" class="tab-panel">
+            <h2>title 2</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo velit eum, itaque cumque rem vel sunt cupiditate nam dolore enim dicta doloremque praesentium dolorum quasi ratione earum! Porro placeat itaque ducimus ab, earum corporis in culpa quo. Perspiciatis, id nihil quo voluptatum harum dignissimos sapiente sed ducimus autem, vel cumque.
+            </p>
+        </div>
+        <div id="tab-3" class="tab-panel">
+            <h2>title 3</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, maxime repellendus, tenetur illo tempore ab voluptate vitae et, numquam doloremque deleniti nam soluta. Tempora accusamus voluptate nemo ipsam suscipit quis quia non sit consequuntur quas sequi, iure sapiente, distinctio facilis nobis corrupti fugit nisi labore veniam quidem vitae?
+            </p>
+        </div>
+    </div>
+    <script>
+        $(function(){
+            $('.tab-link').click(function(){
+                let target = $(this).data('target');
+                $('.tab-link').removeClass('active');
+                $(this).addClass('active');
+                
+                // $('.tab-panel').removeClass('active');
+                // $('#'+target).addClass('active');
+
+                $('.tab-panel').hide();
+                $('#'+target).fadeIn();
+            })
+        })
+    </script>
+</body>
+</html>
