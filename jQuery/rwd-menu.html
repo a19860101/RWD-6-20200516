@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <style>
         * {
             margin: 0;
@@ -15,7 +17,8 @@
             background-color: #222;
             display: flex;
             flex-direction: column;
-            padding: 20px 0;
+            padding:0;
+            position: relative;
         }
         nav a {
             color: #fff;
@@ -26,17 +29,21 @@
         }
         .rwd-btn {
             display: block;
+            position: absolute;
+            right: 15px;
         }
        
         nav .collapse {
             display: flex;
             flex-direction: column;
             width: 100%;
+            display: none;
         }
 
         @media (min-width:600px){
             nav {
                 flex-direction: row;
+                padding: 20px 0;
             }
             nav a {
                 padding: 0;
@@ -47,6 +54,7 @@
             }
             nav .collapse {
                 flex-direction: row;
+                display: flex;
             }
             nav .login {
                 margin-left: auto;
@@ -74,5 +82,20 @@
             </div>
         </div>
     </nav>
+    <script>
+        $(function(){
+            $('.rwd-btn').click(function(){
+                $('.collapse').slideToggle();
+            })
+            $(window).resize(function(){
+                let w = $(this).width();
+                if(w > 600){
+                    $('.collapse').css('display','flex');
+                }else{
+                    $('.collapse').hide();
+                }
+            });
+        })
+    </script>
 </body>
 </html>
