@@ -25,7 +25,13 @@
             display: inline-block;
             line-height: 50px;
             color: #eee;
-            margin: 0 15px;
+            padding: 0 25px;
+            transition: .4s;
+        }
+        nav a.active{
+            background-color: #ccc;
+            color: #222;
+            transition: .4s;
         }
         #about,#service,#product,#contact {
             height: 100vh;
@@ -60,7 +66,7 @@
 </head>
 <body>
     <nav>
-        <a href="#" data-target="#about">About</a>
+        <a href="#" data-target="#about" class="active">About</a>
         <a href="#" data-target="#service">Service</a>
         <a href="#" data-target="#product">Product</a>
         <a href="#" data-target="#contact">Contact</a>
@@ -73,6 +79,9 @@
     <script>
         $(function(){
             $('nav').find('a').click(function(e){
+                $('nav').find('a').removeClass('active');
+                $(this).addClass('active');
+
                 let target = $(this).data('target');
                 let distance = $(target).offset().top;
                 $('html,body').animate({
