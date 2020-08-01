@@ -53,6 +53,7 @@
             text-decoration: none;
             text-align: center;
             line-height: 50px;
+            display: none;
         }
     </style>
 </head>
@@ -82,6 +83,15 @@
                     scrollTop:0
                 })
             })
+            $(window).scroll(function(){
+                let h = $(this).scrollTop();
+                console.log(h);
+                if(h > 800){
+                    $('#gotop').fadeIn();
+                }else{
+                    $('#gotop').fadeOut();
+                }
+            });
         })
     </script>
 </body>
