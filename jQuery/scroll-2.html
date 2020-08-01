@@ -71,17 +71,20 @@
     <a href="#" id="gotop">TOP</a>
     <script>
         $(function(){
-            $('nav').find('a').click(function(){
+            $('nav').find('a').click(function(e){
                 let target = $(this).data('target');
                 let distance = $(target).offset().top;
                 $('html,body').animate({
                     scrollTop: distance
                 })
+                e.preventDefault();
             })
-            $('#gotop').click(function(){
+            $('#gotop').click(function(e){
                 $('html,body').animate({
                     scrollTop:0
                 })
+                // return false;
+                e.preventDefault();
             })
             $(window).scroll(function(){
                 let h = $(this).scrollTop();
