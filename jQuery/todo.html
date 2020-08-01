@@ -50,6 +50,12 @@
                 $('#todos').append(li);
                 $('#input').val('');
             })
+            $(document).on('click','.del',function(){
+                // $(this).parent().remove();
+                $(this).parent().fadeOut(function(){
+                    $(this).remove();
+                });
+            });
             
         })
     </script>
