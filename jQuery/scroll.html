@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -52,5 +53,35 @@
     <div id="service"></div>
     <div id="product"></div>
     <div id="contact"></div>
+    <script>
+        $(function(){
+            let a = $('#about').offset().top;
+            let s = $('#service').offset().top;
+            let p = $('#product').offset().top;
+            let c = $('#contact').offset().top;
+            $('nav').find('a').eq(0).click(function(){
+                $('html,body').animate({
+                    scrollTop: a
+                })
+            })
+            $('nav').find('a').eq(1).click(function(){
+                $('html,body').animate({
+                    scrollTop: s
+                })
+            })
+            $('nav').find('a').eq(2).click(function(){
+                $('html,body').animate({
+                    scrollTop: p
+                })
+            })
+            $('nav').find('a').eq(3).click(function(){
+                $('html,body').animate({
+                    scrollTop: c
+                })
+            })
+            // $('nav a:nth-of-type(1)').click(function(){})
+
+        })
+    </script>
 </body>
 </html>
