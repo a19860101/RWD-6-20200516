@@ -15,19 +15,30 @@
         }
         nav {
             width: 100%;
-            height: 50px;
             text-align: center;
             background-color: #222;
             position: fixed;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            transition: .4s;
+        }
+        nav.active {
+            padding-top: 7px;
+            padding-bottom: 7px;
+            background-color: #b83b5e;
+            transition: .4s;
         }
         nav a {
             text-decoration: none;
             display: inline-block;
-            line-height: 50px;
             color: #eee;
             padding: 0 25px;
             transition: .4s;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
         }
+        
         nav a.active{
             background-color: #ccc;
             color: #222;
@@ -104,8 +115,10 @@
                 if(h > 800){
                     // $('#gotop').fadeIn();
                     $('#gotop').show().removeClass(ani_out).addClass(ani +' '+ani_in);
+                    $('nav').addClass('active');
                 }else{
                     $('#gotop').removeClass(ani_in).addClass(ani +' '+ ani_out);
+                    $('nav').removeClass('active')
                 }
                 $('nav').find('a').each(function(){
                     let target = $(this).data('target');
