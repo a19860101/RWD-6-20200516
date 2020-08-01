@@ -56,6 +56,9 @@
                     $(this).remove();
                 });
             });
+            $(document).on('click','.list-group-item',function(){
+                $(this).toggleClass('complete');
+            })
             
         })
     </script>
