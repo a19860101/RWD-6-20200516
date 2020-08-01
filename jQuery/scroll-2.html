@@ -79,8 +79,8 @@
     <script>
         $(function(){
             $('nav').find('a').click(function(e){
-                $('nav').find('a').removeClass('active');
-                $(this).addClass('active');
+                // $('nav').find('a').removeClass('active');
+                // $(this).addClass('active');
 
                 let target = $(this).data('target');
                 let distance = $(target).offset().top;
@@ -107,6 +107,15 @@
                 }else{
                     $('#gotop').removeClass(ani_in).addClass(ani +' '+ ani_out);
                 }
+                $('nav').find('a').each(function(){
+                    let target = $(this).data('target');
+                    let _o = $(target).offset().top;
+                    console.log(_o,h);
+                    if(h >= _o-200){
+                        $('nav').find('a').removeClass('active');
+                        $(this).addClass('active');
+                    }
+                })
             });
         })
     </script>
