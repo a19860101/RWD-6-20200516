@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI";
+        }
+        nav {
+            width: 100%;
+            background-color: #222;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            display: block;
+            padding: 15px 0;
+        }
+        .rwd-btn {
+            display: block;
+        }
+       
+        nav .collapse {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        @media (min-width:600px){
+            nav {
+                flex-direction: row;
+            }
+            nav a {
+                padding: 0;
+                display:inline-block;
+            }
+            .rwd-btn {
+                display: none;
+            }
+            nav .collapse {
+                flex-direction: row;
+            }
+            nav .login {
+                margin-left: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#">Logo</a>
+        </div>
+        <div class="rwd-btn">
+            <a href="#">button</a>
+        </div>
+        <div class="collapse">
+            <div class="menu">
+                <a href="#">about</a>
+                <a href="#">service</a>
+                <a href="#">product</a>
+                <a href="#">contact</a>
+            </div>
+            <div class="login">
+                <a href="#">Login</a>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
