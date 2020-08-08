@@ -55,14 +55,25 @@
                 autoplaySpeed:800,
                 autoplayTimeout: 3000,
                 loop: true,
-                dots: true,
+                dots: false,
                 dotsSpeed: 800,
-                nav: true,
+                nav: false,
                 navSpeed: 800,
                 navText:['<i class="fas fa-angle-left fa-2x"></i>','<i class="fas fa-angle-right fa-2x"></i>'],
                 navElement: 'div',
-                animateIn: 'flipInX',
-                animateOut: 'fadeOutDown'
+                // animateIn: 'flipInX',
+                // animateOut: 'fadeOutDown'
+                responsive:{
+                    600: {
+                        items: 3,
+                        nav: true
+                    },
+                    1200: {
+                        items: 5,
+                        nav: true,
+                        dots:true
+                    }
+                }
             });
         })
     </script>
