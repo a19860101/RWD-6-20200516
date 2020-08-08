@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <div id="slider" class="owl-carousel">
+        <div id="slider" class="owl-carousel owl-theme">
             <img src="https://picsum.photos/id/62/1600/800" alt="">
             <img src="https://picsum.photos/id/63/1600/800" alt="">
             <img src="https://picsum.photos/id/64/1600/800" alt="">
@@ -24,7 +24,14 @@
             $('#slider').owlCarousel({
                 items: 1,
                 autoplay: true,
-                loop: true
+                autoplaySpeed:800,
+                autoplayTimeout: 3000,
+                loop: true,
+                dots: true,
+                dotsSpeed: 800,
+                nav: true,
+                navSpeed: 800
+
             });
         })
     </script>
