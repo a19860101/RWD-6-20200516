@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <script>
+        $(function(){
+            $.ajax({
+                url:'https://randomuser.me/api/?results=100',
+                success:function(data){
+                    console.log(data.results);
+                    data.results.forEach(function(e){
+                        // console.log(e.name.first)
+                        // console.log(e.email)
+                        console.log(e.picture.large)
+                        let content = `
+                            <div class="user">
+                                <img src="${e.picture.large}">
+                                <h2>${e.name.first} ${e.name.last}</h2>
+                                <div>${e.email}</div>
+                            </div>
+                        `
+                        $('.container').append(content);
+                    })
+                },
+                error:function(){
+                    console.log('error');
+                }
+            })
+        })
+    </script>
+</body>
+</html>
