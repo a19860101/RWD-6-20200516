@@ -7,8 +7,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <style>
+        button {
+            outline: 0;
+        }
+        .owl-theme .owl-nav [class*=owl-] {
+            background: transparent;
+            color: #000;
+        }
+        .owl-theme .owl-nav [class*=owl-]:hover {
+            background: transparent;
+            color: #0af;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -32,9 +46,10 @@
                 dotsSpeed: 800,
                 nav: true,
                 navSpeed: 800,
+                navText:['<i class="fas fa-angle-left fa-2x"></i>','<i class="fas fa-angle-right fa-2x"></i>'],
+                navElement: 'div',
                 animateIn: 'flipInX',
                 animateOut: 'fadeOutDown'
-
             });
         })
     </script>
