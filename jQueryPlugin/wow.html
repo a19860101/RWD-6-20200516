@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -88,16 +89,16 @@
     </style>
 </head>
 <body>
-    <nav>
+    <nav class="wow fadeInDown">
         <a href="#" data-target="#about" class="active">About</a>
         <a href="#" data-target="#service">Service</a>
         <a href="#" data-target="#product">Product</a>
         <a href="#" data-target="#contact">Contact</a>
     </nav>
     <div id="about" class="container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box wow fadeInLeft"></div>
+        <div class="box wow fadeInUp"></div>
+        <div class="box wow fadeInRight"></div>
     </div>
     <div id="service" class="container">
         <div class="box"></div>
@@ -159,6 +160,7 @@
                 })
             });
         })
+        new WOW().init();
     </script>
 </body>
 </html>
