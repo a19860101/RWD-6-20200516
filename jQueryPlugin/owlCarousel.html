@@ -22,6 +22,16 @@
             background: transparent;
             color: #0af;
         }
+        .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot span {
+            background-color: #e41792;
+        }
+        .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+            background-color: #17a3e4;
+        }
+        .owl-theme .owl-dots .owl-dot span {
+            border-radius: 0;
+            transform: rotate(45deg)
+        }
     </style>
 </head>
 <body>
@@ -32,13 +42,16 @@
             <img src="https://picsum.photos/id/64/1600/800" alt="">
             <img src="https://picsum.photos/id/65/1600/800" alt="">
             <img src="https://picsum.photos/id/66/1600/800" alt="">
+            <img src="https://picsum.photos/id/67/1600/800" alt="">
+            <img src="https://picsum.photos/id/68/1600/800" alt="">
+            <img src="https://picsum.photos/id/69/1600/800" alt="">
         </div>
     </header>
     <script>
         $(function(){
             $('#slider').owlCarousel({
                 items: 1,
-                autoplay: true,
+                // autoplay: true,
                 autoplaySpeed:800,
                 autoplayTimeout: 3000,
                 loop: true,
