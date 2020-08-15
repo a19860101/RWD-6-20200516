@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <style>
+        .red {
+            color: #f00;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h1 v-bind:class="titleColor">{{title}}</h1>
+        <div :class="titleColor">{{number}}</div>
+        <ul>
+            <li v-for="drink,idx in drinks">{{idx}}--{{drink}}</li>
+        </ul>
+        <button @click="test()">click</button>
+        <button @click="test2()">click 2</button>
+        <div v-for="n in 10">{{n}}</div>
+        <a v-bind:href="link">Yahoo</a>
+        <a :href="link">Yahoo</a>
+    </div>
+    <script>
+        let app = Vue.createApp({
+            data(){
+                return {
+                    title:'hello world',
+                    number: 999,
+                    drinks: ['紅茶','綠茶','奶茶','冰淇淋紅茶'],
+                    link : 'https://tw.yahoo.com',
+                    titleColor: 'red'
+                }
+            },
+            methods:{
+                test(){
+                    alert(this.number);
+                },
+                test2(){
+                    alert(this.title);
+                }
+            }
+        })
+        // .mount('#app');
+        app.mount('#app');
+    </script>
+</body>
+</html>
